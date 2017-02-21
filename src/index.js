@@ -4,6 +4,7 @@ const meow = require('meow')
 const fs = require('fs-extra')
 const path = require('path')
 const chalk = require('chalk')
+const inquirer = require('inquirer')
 
 const runner = require('./runner')
 const log = require('./helpers/log')
@@ -120,4 +121,13 @@ log.raw('===============================')
 /**
 * Run run
 */
-runner(appConfig)
+inquirer.prompt([
+  {
+    type: 'confirm',
+    message: 'Is the data above ok and should we proceed? ',
+    name: 'confirmed',
+    default: false
+  }
+]).then(answers => {
+  runner(appConfig)
+})
