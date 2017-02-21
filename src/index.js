@@ -37,6 +37,8 @@ const cli = meow(`
     }
 })
 
+log.raw('Welcome!')
+
 if(!cli.flags.source || cli.flags.source == '') {
     log.error('source Option not found.')
     cli.showHelp()
@@ -105,7 +107,7 @@ const appConfig = {
 /**
  * Go for it
  */
-log.raw('Welcome!')
+log.raw('===============================')
 log.raw(`Moving Database from ${chalk.cyan(appConfig.source)} to ${chalk.cyan(appConfig.target)}`)
 log.raw('===============================')
 log.raw(`Config: ${chalk.cyan(userConfigPath)}`)
