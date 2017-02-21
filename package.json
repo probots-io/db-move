@@ -1,6 +1,6 @@
 {
   "name": "db-move",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Database Migrations [in development]",
   "main": "src/index.js",
   "scripts": {
@@ -15,6 +15,9 @@
     "node-fetch": "^1.5.3",
     "promise": "^7.1.1",
     "shelljs": "^0.7.0"
+  },
+  "bin": {
+    "db-move": "./src/index.js"
   },
   "author": "Marcus Pohorely",
   "license": "ISC",
