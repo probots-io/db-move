@@ -1,6 +1,6 @@
 {
   "name": "dbmove",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Database Migrations [in development]",
   "main": "src/index.js",
   "scripts": {
