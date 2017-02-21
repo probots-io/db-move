@@ -1,4 +1,4 @@
-'use strict'
+#! /usr/bin/env node
 
 const meow = require('meow')
 const fs = require('fs-extra')

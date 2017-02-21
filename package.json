@@ -1,6 +1,6 @@
 {
-  "name": "dbmove",
-  "version": "0.0.4",
+  "name": "db-move",
+  "version": "0.0.8",
   "description": "Database Migrations [in development]",
   "main": "src/index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "promise": "^7.1.1",
     "shelljs": "^0.7.0"
   },
+  "bin": {
+    "db-move": "./src/index.js"
+  },
   "author": "Marcus Pohorely",
   "license": "ISC",
-  "repository": "git@github.com:probots-io/dbMove.git"
+  "repository": "git@github.com:probots-io/db-move.git"
 }
