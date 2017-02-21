@@ -1,0 +1,22 @@
+{
+  "name": "dbmove",
+  "version": "0.0.3",
+  "description": "Database Migrations [in development]",
+  "main": "src/index.js",
+  "scripts": {
+    "db:pull": "node src/index.js --source=production --target=development",
+    "db:push": "node src/index.js --source=development --target=production"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fs-extra": "^2.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "meow": "^3.7.0",
+    "node-fetch": "^1.5.3",
+    "promise": "^7.1.1",
+    "shelljs": "^0.7.0"
+  },
+  "author": "Marcus Pohorely",
+  "license": "ISC",
+  "repository": "git@github.com:probots-io/dbMove.git"
+}
