@@ -65,7 +65,6 @@ Here is an example config for you to play around:
 
   }
 }
-
 ```
 Store it as `.dbrc` in the root of your project.
 

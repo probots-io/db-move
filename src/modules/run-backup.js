@@ -18,7 +18,7 @@ const runBackup = (config) => {
     commandArr.push('--single-transaction')
     commandArr.push('--quick')
     commandArr.push('--lock-tables=false')
-    commandArr.push(`> ${config.backupFolder}/${config.backupFileName}`)
+    commandArr.push(`> "${config.backupFolder}/${config.backupFileName}"`)
 
     const command = commandArr.join(' ')
 

@@ -14,7 +14,7 @@ const runImport = (config) => {
     commandArr.push(`--user=${server.username}`)
     commandArr.push(`--password=${server.password}`)
     commandArr.push(server.database)
-    commandArr.push(`< ${config.backupFolder}/tmp.sql`)
+    commandArr.push(`< "${config.backupFolder}/tmp.sql"`)
 
     const command = commandArr.join(' ')
 
