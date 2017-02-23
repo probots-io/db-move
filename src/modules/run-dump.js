@@ -25,7 +25,7 @@ const runDump = (config) => {
     commandArr.push('--single-transaction')
     commandArr.push('--quick')
     commandArr.push('--lock-tables=false')
-    commandArr.push(`> ${config.backupFolder}/tmp.sql`)
+    commandArr.push(`> "${config.backupFolder}/tmp.sql"`)
 
     const command = commandArr.join(' ')
 
