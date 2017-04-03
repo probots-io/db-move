@@ -2,7 +2,7 @@ var fetch = require('node-fetch')
 const log = require('../helpers/log')
 
 const runHook = (type, config) => {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     const server = (type === 'before') ? config.sourceServer : config.targetServer
     if(!server.webhooks || !server.webhooks[type] || server.webhooks[type] == '') {
       resolve()

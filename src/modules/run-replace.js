@@ -5,7 +5,7 @@ const peach = require('../helpers/peach')
 const log = require('../helpers/log')
 
 const runReplace = (config) => {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     const sourceFile = `${config.backupFolder}/tmp.sql`
 
     log.raw(`Running Replacers`)

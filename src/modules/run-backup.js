@@ -1,7 +1,7 @@
 var shell = require('shelljs')
 
 const runBackup = (config) => {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
 
     const server = config.targetServer
 
