@@ -25,6 +25,14 @@ const runner = (config) => {
       log.raw(`${chalk.magenta('Enjoyed this?')} Follow me on Twitter: ${chalk.magenta('@derpoho')}`)
       log.raw('===============================')
     })
+    .catch(err => {
+      log.error(`Oh no, an Error occured:`)
+      if(err.message) {
+        log.raw(chalk.red(err.message))
+      } else {
+        log.raw(err)
+      }
+    })
 
 }
 
