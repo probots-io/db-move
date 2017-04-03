@@ -131,5 +131,7 @@ inquirer.prompt([
     default: false
   }
 ]).then(answers => {
-  runner(appConfig)
+  if(answers.confirm) {
+    runner(appConfig)
+  }
 })
