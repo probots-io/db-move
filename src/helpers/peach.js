@@ -114,8 +114,8 @@ Peach.migrate.prototype = {
 
   _handle_domains_wo_protocol: function () {
     var instance = this
-    var old_domain_wo_protocol = this.old_domain.replace(/^(https?):\/\//, '')
-    var new_domain_wo_protocol = instance.new_domain.replace(/^(https?):\/\//, '')
+    var old_domain_wo_protocol = this.old_domain.replace(/^(https?):/, '')
+    var new_domain_wo_protocol = instance.new_domain.replace(/^(https?):/, '')
 
     this.new_haystack = this.new_haystack.replace(
       new RegExp(reg_escape(old_domain_wo_protocol), 'gi'),
