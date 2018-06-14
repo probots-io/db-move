@@ -1,6 +1,6 @@
 ## dbMove
 
-`Currently under heavy development`
+`Still under development as i find time for it. if you wanna join in, you are welcome!`
 
 This is an (currently) experimental package for running mysql database migrations between multiple stages.
 Currently it only supports replacing one string (`host`), but it will support multiple some time.
