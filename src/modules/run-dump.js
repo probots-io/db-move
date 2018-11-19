@@ -17,7 +17,7 @@ const runDump = (config) => {
     commandArr.push(`--host=${server.host}`)
     commandArr.push(`--port=${server.port}`)
     commandArr.push(`--user=${server.username}`)
-    commandArr.push(`--password="${server.password}"`)
+    commandArr.push(`--password="${server.password.replace('$', '\\$')}"`)
     commandArr.push(server.database)
     server.exclude_tables.forEach(table => {
       commandArr.push(`--ignore-table=${server.database}.${table}`)
